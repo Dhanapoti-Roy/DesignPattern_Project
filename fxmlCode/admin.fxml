@@ -1,1 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="572.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.demo2.AdminController">
+    <children>
+        <VBox alignment="CENTER" layoutX="150.0" layoutY="50.0" spacing="12">
+            <padding>
+                <Insets bottom="20" left="40" right="40" top="20" />
+            </padding>
+
+            <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Admin Dashboard" />
+
+            <!-- Employee Permissions -->
+            <!-- <Button text="Create Customer Order" onAction="#handleCreateOrder"/> -->
+            <Button onAction="#handleViewCustomers" text="View Customer List" />
+            <Button onAction="#handleCheckStock" text="Check Current Stock" />
+
+            <!-- Admin Extra Permissions -->
+            <Button onAction="#handleAddProduct" text="Add New Product" />
+            <Button onAction="#handleEditStock" text="Edit Stock" />
+            <Button onAction="#handleRecordPurchase" text="Record Purchase" />
+
+            <!-- Report Generation Buttons -->
+            <Button onAction="#handleGenerateCsvReport" text="Export Products (CSV)" />
+            <Button onAction="#handleGeneratePdfReport" text="Export Products (PDF)" />
+        </VBox>
+    </children>
+</AnchorPane>
