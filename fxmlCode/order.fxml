@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="499.0" prefWidth="437.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.demo2.OrderController">
+    <children>
+        <VBox alignment="CENTER" layoutX="100" layoutY="20" prefHeight="479.0" prefWidth="252.0" spacing="12">
+            <padding><Insets bottom="20" left="40" right="40" top="20" /></padding>
+
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Create Customer Order" />
+
+            <!-- Customer Info -->
+            <TextField fx:id="customerNameField" promptText="Customer Name" />
+            <TextField fx:id="phoneField" promptText="Phone Number" />
+            <TextField fx:id="addressField" promptText="Address" />
+            <TextField fx:id="nidField" promptText="NID Number" />
+            <ComboBox fx:id="paymentMethodBox" promptText="Payment Method">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Cash" />
+                        <String fx:value="Bkash" />
+                        <String fx:value="Nagad" />
+                        <String fx:value="Card" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <!-- Product Info -->
+            <TextField fx:id="productNameField" promptText="Product Name" />
+            <TextField fx:id="typeField" promptText="Product Type" />
+            <TextField fx:id="colorField" promptText="Product Color" />
+            <TextField fx:id="quantityField" promptText="Quantity" />
+
+            <Button onAction="#handleSubmitOrder" text="Submit Order" />
+            <Label fx:id="statusLabel" textFill="green" />
+        </VBox>
+    </children>
+</AnchorPane>

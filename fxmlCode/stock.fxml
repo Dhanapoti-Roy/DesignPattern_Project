@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.demo2.StockController">
+    <children>
+        <VBox layoutX="20.0" layoutY="20.0" prefHeight="400" prefWidth="600" spacing="10">
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Current Stock" />
+
+            <TableView fx:id="stockTable" prefHeight="394.0" prefWidth="611.0">
+                <columns>
+                    <TableColumn fx:id="nameCol" prefWidth="140" text="Product Name" />
+                    <TableColumn fx:id="typeCol" prefWidth="120" text="Type" />
+                    <TableColumn fx:id="colorCol" prefWidth="120" text="Color" />
+                    <TableColumn fx:id="quantityCol" prefWidth="100" text="Quantity" />
+                    <TableColumn fx:id="priceCol" prefWidth="100" text="Price" />
+                    <TableColumn fx:id="expiryCol" prefWidth="120" text="expiry date"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </children>
+</AnchorPane>

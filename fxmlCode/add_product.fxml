@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.demo2.AddProductController">
+    <children>
+        <VBox alignment="CENTER" layoutX="6.0" prefHeight="420.0" prefWidth="300.0" spacing="10">
+            <padding><Insets bottom="20" left="40" right="40" top="20" /></padding>
+
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Add New Product" />
+
+            <TextField fx:id="idField" promptText="Product ID" />
+            <TextField fx:id="nameField" promptText="Product Name" />
+            <TextField fx:id="categoryField" promptText="Category" />
+            <TextField fx:id="buyingPriceField" promptText="Buying Price" />
+            <TextField fx:id="sellingPriceField" promptText="Selling Price" />
+            <TextField fx:id="quantityField" promptText="Quantity" />
+            <DatePicker fx:id="addingDatePicker" promptText="Adding Date" />
+            <DatePicker fx:id="expireDatePicker" promptText="Expire Date" />
+
+            <Button onAction="#handleAddProduct" text="Add Product" />
+            <Label fx:id="statusLabel" textFill="green" />
+        </VBox>
+    </children>
+</AnchorPane>

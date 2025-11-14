@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo2.DashboardController">
+    <children>
+        <VBox spacing="20" alignment="CENTER" layoutX="150.0" layoutY="100.0">
+            <padding>
+                <Insets top="30" right="50" bottom="30" left="50"/>
+            </padding>
+
+            <Label text="Employee Dashboard" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+            <Button text="Create Customer Order" onAction="#handleCreateOrder"/>
+            <Button text="View Customer List" onAction="#handleViewCustomers"/>
+            <Button text="Check Current Stock" onAction="#handleCheckStock"/>
+            <!--<Button text="Add New Product" onAction="#handleAddProduct"/>
+            <Button text="Edit Stock" onAction="#handleEditStock"/>
+            <Button text="Record Purchase" onAction="#handleRecordPurchase"/> -->
+        </VBox>
+    </children>
+</AnchorPane>
